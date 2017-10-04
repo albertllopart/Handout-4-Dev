@@ -74,6 +74,7 @@ bool j1Map::CleanUp()
 		item = item->next;
 	}
 	data.tilesets.clear();
+	data.layers.clear();
 
 	// TODO 2: clean up all layer data
 	// Remove all layers
@@ -291,7 +292,7 @@ bool j1Map::LoadTilesetImage(pugi::xml_node& tileset_node, TileSet* set)
 	return ret;
 }
 
-// TODO 3: Create the definition for a function that loads a single layer
+//TODO 3: Create the definition for a function that loads a single layer
 //bool j1Map::LoadLayer(pugi::xml_node& node, MapLayer* layer)
 //{
 //}
