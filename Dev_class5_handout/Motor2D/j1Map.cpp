@@ -293,6 +293,16 @@ bool j1Map::LoadTilesetImage(pugi::xml_node& tileset_node, TileSet* set)
 }
 
 //TODO 3: Create the definition for a function that loads a single layer
-//bool j1Map::LoadLayer(pugi::xml_node& node, MapLayer* layer)
-//{
-//}
+bool j1Map::LoadLayer(pugi::xml_node& node, MapLayer* layer)
+{
+	layer->name = node.attribute("name").as_string();
+	layer->width = node.attribute("width").as_uint();
+	layer->height = node.attribute("height").as_uint();
+
+	for (pugi::xml_node Iterator = node.child("data").child("tile"); Iterator; Iterator = Iterator.next_sibling("tile"))
+	{
+		layer->gid.add(Iterator.attribute("gid").as_int());
+	}
+	
+	return true;
+}
