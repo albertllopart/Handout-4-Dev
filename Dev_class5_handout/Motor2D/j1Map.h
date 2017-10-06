@@ -14,6 +14,11 @@ struct MapLayer
 	unsigned int		height = 0;
 
 	p2List<uint>		gid;
+
+	uint Get(int x, int y)const
+	{
+		return gid[y*width + x];
+	}
 };
 // ----------------------------------------------------
 

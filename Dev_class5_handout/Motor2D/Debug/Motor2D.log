@@ -1,0 +1,18 @@
+﻿  j1Scene.cpp
+c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(199): error C3861: 'ASSERT': identifier not found
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(182): note: while compiling class template member function 'const uint &p2List<uint>::operator [](const unsigned int) const'
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(20): note: see reference to function template instantiation 'const uint &p2List<uint>::operator [](const unsigned int) const' being compiled
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(16): note: see reference to class template instantiation 'p2List<uint>' being compiled
+  j1Map.cpp
+c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(199): error C3861: 'ASSERT': identifier not found
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(182): note: while compiling class template member function 'const uint &p2List<uint>::operator [](const unsigned int) const'
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(20): note: see reference to function template instantiation 'const uint &p2List<uint>::operator [](const unsigned int) const' being compiled
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(16): note: see reference to class template instantiation 'p2List<uint>' being compiled
+  j1App.cpp
+c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(199): error C3861: 'ASSERT': identifier not found
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\p2list.h(182): note: while compiling class template member function 'const uint &p2List<uint>::operator [](const unsigned int) const'
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(20): note: see reference to function template instantiation 'const uint &p2List<uint>::operator [](const unsigned int) const' being compiled
+  c:\users\albertln\desktop\handout-4-dev\dev_class5_handout\motor2d\j1map.h(16): note: see reference to class template instantiation 'p2List<uint>' being compiled
+  Generating Code...

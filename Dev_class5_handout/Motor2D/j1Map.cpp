@@ -32,6 +32,20 @@ void j1Map::Draw()
 		return;
 
 	// TODO 5: Prepare the loop to draw all tilesets + Blit
+	p2List_item<MapLayer*>* fakeLayer = data.layers.start;
+	p2List_item<TileSet*>* fakeTileset = data.tilesets.start;
+
+	for (uint x = 0; x < fakeLayer->data->width; x++)
+	{
+		for (uint y = 0; y < fakeLayer->data->height; y++)
+		{
+			int ID = fakeLayer->data->Get(x, y);
+			iPoint position = MapToWorld(x, y);
+			SDL_Rect rect = fakeTileset->data->GetTileRect(ID);
+			
+			App->render->Blit(fakeTileset->data->texture, position.x, position.y, &rect);
+		}
+	}
 
 		// TODO 9: Complete the draw function
 
